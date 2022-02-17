@@ -1,0 +1,21 @@
+function checkPalindrom(palindrom)
+{
+   var flag = true;
+   var j = 0;
+    for( var i = palindrom.length-1; i > palindrom.length/2; i-- )
+    {
+        if( palindrom[i] != palindrom[j] )
+        {
+           flag = false;
+           break; 
+        }
+        j++;
+    }
+  if( flag ) {
+  document.write('the word is palindrome.');
+  }
+  else {
+document.write('the word is not palindrome.');
+  }
+}
+checkPalindrom(prompt("Vvedite palindrome"));
